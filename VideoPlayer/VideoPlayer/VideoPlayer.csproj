@@ -1,0 +1,1306 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="plugins\access\libaccess_concat_plugin.dll" />
+    <None Remove="plugins\access\libaccess_imem_plugin.dll" />
+    <None Remove="plugins\access\libaccess_mms_plugin.dll" />
+    <None Remove="plugins\access\libaccess_srt_plugin.dll" />
+    <None Remove="plugins\access\libaccess_wasapi_plugin.dll" />
+    <None Remove="plugins\access\libattachment_plugin.dll" />
+    <None Remove="plugins\access\libbluray-awt-j2se-1.3.2.jar" />
+    <None Remove="plugins\access\libbluray-j2se-1.3.2.jar" />
+    <None Remove="plugins\access\libcdda_plugin.dll" />
+    <None Remove="plugins\access\libdcp_plugin.dll" />
+    <None Remove="plugins\access\libdtv_plugin.dll" />
+    <None Remove="plugins\access\libfilesystem_plugin.dll" />
+    <None Remove="plugins\access\libftp_plugin.dll" />
+    <None Remove="plugins\access\libhttps_plugin.dll" />
+    <None Remove="plugins\access\libhttp_plugin.dll" />
+    <None Remove="plugins\access\libidummy_plugin.dll" />
+    <None Remove="plugins\access\libimem_plugin.dll" />
+    <None Remove="plugins\access\liblibbluray_plugin.dll" />
+    <None Remove="plugins\access\liblive555_plugin.dll" />
+    <None Remove="plugins\access\libnfs_plugin.dll" />
+    <None Remove="plugins\access\librist_plugin.dll" />
+    <None Remove="plugins\access\librtp_plugin.dll" />
+    <None Remove="plugins\access\libsatip_plugin.dll" />
+    <None Remove="plugins\access\libscreen_plugin.dll" />
+    <None Remove="plugins\access\libsdp_plugin.dll" />
+    <None Remove="plugins\access\libsftp_plugin.dll" />
+    <None Remove="plugins\access\libshm_plugin.dll" />
+    <None Remove="plugins\access\libsmb_plugin.dll" />
+    <None Remove="plugins\access\libtcp_plugin.dll" />
+    <None Remove="plugins\access\libtimecode_plugin.dll" />
+    <None Remove="plugins\access\libudp_plugin.dll" />
+    <None Remove="plugins\access\libvcd_plugin.dll" />
+    <None Remove="plugins\access\libvdr_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_dummy_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_file_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_http_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_livehttp_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_rist_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_shout_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_srt_plugin.dll" />
+    <None Remove="plugins\access_output\libaccess_output_udp_plugin.dll" />
+    <None Remove="plugins\audio_filter\libaudiobargraph_a_plugin.dll" />
+    <None Remove="plugins\audio_filter\libaudio_format_plugin.dll" />
+    <None Remove="plugins\audio_filter\libchorus_flanger_plugin.dll" />
+    <None Remove="plugins\audio_filter\libcompressor_plugin.dll" />
+    <None Remove="plugins\audio_filter\libequalizer_plugin.dll" />
+    <None Remove="plugins\audio_filter\libgain_plugin.dll" />
+    <None Remove="plugins\audio_filter\libkaraoke_plugin.dll" />
+    <None Remove="plugins\audio_filter\libnormvol_plugin.dll" />
+    <None Remove="plugins\audio_filter\libparam_eq_plugin.dll" />
+    <None Remove="plugins\audio_filter\libremap_plugin.dll" />
+    <None Remove="plugins\audio_filter\libscaletempo_pitch_plugin.dll" />
+    <None Remove="plugins\audio_filter\libscaletempo_plugin.dll" />
+    <None Remove="plugins\audio_filter\libsimple_channel_mixer_plugin.dll" />
+    <None Remove="plugins\audio_filter\libspatialaudio_plugin.dll" />
+    <None Remove="plugins\audio_filter\libspatializer_plugin.dll" />
+    <None Remove="plugins\audio_filter\libspeex_resampler_plugin.dll" />
+    <None Remove="plugins\audio_filter\libstereo_widen_plugin.dll" />
+    <None Remove="plugins\audio_filter\libtospdif_plugin.dll" />
+    <None Remove="plugins\audio_filter\libtrivial_channel_mixer_plugin.dll" />
+    <None Remove="plugins\audio_filter\libugly_resampler_plugin.dll" />
+    <None Remove="plugins\audio_mixer\libfloat_mixer_plugin.dll" />
+    <None Remove="plugins\audio_mixer\libinteger_mixer_plugin.dll" />
+    <None Remove="plugins\audio_output\libadummy_plugin.dll" />
+    <None Remove="plugins\audio_output\libafile_plugin.dll" />
+    <None Remove="plugins\audio_output\libamem_plugin.dll" />
+    <None Remove="plugins\audio_output\libdirectsound_plugin.dll" />
+    <None Remove="plugins\audio_output\libmmdevice_plugin.dll" />
+    <None Remove="plugins\audio_output\libwasapi_plugin.dll" />
+    <None Remove="plugins\audio_output\libwaveout_plugin.dll" />
+    <None Remove="plugins\codec\libadpcm_plugin.dll" />
+    <None Remove="plugins\codec\libaes3_plugin.dll" />
+    <None Remove="plugins\codec\libaom_plugin.dll" />
+    <None Remove="plugins\codec\libaraw_plugin.dll" />
+    <None Remove="plugins\codec\libavcodec_plugin.dll" />
+    <None Remove="plugins\codec\libcc_plugin.dll" />
+    <None Remove="plugins\codec\libcdg_plugin.dll" />
+    <None Remove="plugins\codec\libcrystalhd_plugin.dll" />
+    <None Remove="plugins\codec\libcvdsub_plugin.dll" />
+    <None Remove="plugins\codec\libd3d11va_plugin.dll" />
+    <None Remove="plugins\codec\libdav1d_plugin.dll" />
+    <None Remove="plugins\codec\libddummy_plugin.dll" />
+    <None Remove="plugins\codec\libdmo_plugin.dll" />
+    <None Remove="plugins\codec\libdvbsub_plugin.dll" />
+    <None Remove="plugins\codec\libdxva2_plugin.dll" />
+    <None Remove="plugins\codec\libedummy_plugin.dll" />
+    <None Remove="plugins\codec\libflac_plugin.dll" />
+    <None Remove="plugins\codec\libfluidsynth_plugin.dll" />
+    <None Remove="plugins\codec\libg711_plugin.dll" />
+    <None Remove="plugins\codec\libjpeg_plugin.dll" />
+    <None Remove="plugins\codec\libkate_plugin.dll" />
+    <None Remove="plugins\codec\liblibass_plugin.dll" />
+    <None Remove="plugins\codec\liblpcm_plugin.dll" />
+    <None Remove="plugins\codec\libmft_plugin.dll" />
+    <None Remove="plugins\codec\libmpg123_plugin.dll" />
+    <None Remove="plugins\codec\liboggspots_plugin.dll" />
+    <None Remove="plugins\codec\libopus_plugin.dll" />
+    <None Remove="plugins\codec\libpng_plugin.dll" />
+    <None Remove="plugins\codec\libqsv_plugin.dll" />
+    <None Remove="plugins\codec\librawvideo_plugin.dll" />
+    <None Remove="plugins\codec\librtpvideo_plugin.dll" />
+    <None Remove="plugins\codec\libschroedinger_plugin.dll" />
+    <None Remove="plugins\codec\libscte18_plugin.dll" />
+    <None Remove="plugins\codec\libscte27_plugin.dll" />
+    <None Remove="plugins\codec\libsdl_image_plugin.dll" />
+    <None Remove="plugins\codec\libspdif_plugin.dll" />
+    <None Remove="plugins\codec\libspeex_plugin.dll" />
+    <None Remove="plugins\codec\libspudec_plugin.dll" />
+    <None Remove="plugins\codec\libstl_plugin.dll" />
+    <None Remove="plugins\codec\libsubsdec_plugin.dll" />
+    <None Remove="plugins\codec\libsubstx3g_plugin.dll" />
+    <None Remove="plugins\codec\libsubsusf_plugin.dll" />
+    <None Remove="plugins\codec\libsvcdsub_plugin.dll" />
+    <None Remove="plugins\codec\libtextst_plugin.dll" />
+    <None Remove="plugins\codec\libtheora_plugin.dll" />
+    <None Remove="plugins\codec\libttml_plugin.dll" />
+    <None Remove="plugins\codec\libtwolame_plugin.dll" />
+    <None Remove="plugins\codec\libuleaddvaudio_plugin.dll" />
+    <None Remove="plugins\codec\libvorbis_plugin.dll" />
+    <None Remove="plugins\codec\libvpx_plugin.dll" />
+    <None Remove="plugins\codec\libwebvtt_plugin.dll" />
+    <None Remove="plugins\codec\libx26410b_plugin.dll" />
+    <None Remove="plugins\codec\libzvbi_plugin.dll" />
+    <None Remove="plugins\d3d9\libdirect3d9_filters_plugin.dll" />
+    <None Remove="plugins\demux\libadaptive_plugin.dll" />
+    <None Remove="plugins\demux\libaiff_plugin.dll" />
+    <None Remove="plugins\demux\libasf_plugin.dll" />
+    <None Remove="plugins\demux\libau_plugin.dll" />
+    <None Remove="plugins\demux\libavi_plugin.dll" />
+    <None Remove="plugins\demux\libcaf_plugin.dll" />
+    <None Remove="plugins\demux\libdemuxdump_plugin.dll" />
+    <None Remove="plugins\demux\libdemux_cdg_plugin.dll" />
+    <None Remove="plugins\demux\libdemux_chromecast_plugin.dll" />
+    <None Remove="plugins\demux\libdemux_stl_plugin.dll" />
+    <None Remove="plugins\demux\libdiracsys_plugin.dll" />
+    <None Remove="plugins\demux\libdirectory_demux_plugin.dll" />
+    <None Remove="plugins\demux\libes_plugin.dll" />
+    <None Remove="plugins\demux\libflacsys_plugin.dll" />
+    <None Remove="plugins\demux\libgme_plugin.dll" />
+    <None Remove="plugins\demux\libh26x_plugin.dll" />
+    <None Remove="plugins\demux\libimage_plugin.dll" />
+    <None Remove="plugins\demux\libmjpeg_plugin.dll" />
+    <None Remove="plugins\demux\libmkv_plugin.dll" />
+    <None Remove="plugins\demux\libmod_plugin.dll" />
+    <None Remove="plugins\demux\libmp4_plugin.dll" />
+    <None Remove="plugins\demux\libmpgv_plugin.dll" />
+    <None Remove="plugins\demux\libnoseek_plugin.dll" />
+    <None Remove="plugins\demux\libnsc_plugin.dll" />
+    <None Remove="plugins\demux\libnsv_plugin.dll" />
+    <None Remove="plugins\demux\libnuv_plugin.dll" />
+    <None Remove="plugins\demux\libogg_plugin.dll" />
+    <None Remove="plugins\demux\libplaylist_plugin.dll" />
+    <None Remove="plugins\demux\libps_plugin.dll" />
+    <None Remove="plugins\demux\libpva_plugin.dll" />
+    <None Remove="plugins\demux\librawaud_plugin.dll" />
+    <None Remove="plugins\demux\librawdv_plugin.dll" />
+    <None Remove="plugins\demux\librawvid_plugin.dll" />
+    <None Remove="plugins\demux\libsmf_plugin.dll" />
+    <None Remove="plugins\demux\libsubtitle_plugin.dll" />
+    <None Remove="plugins\demux\libts_plugin.dll" />
+    <None Remove="plugins\demux\libtta_plugin.dll" />
+    <None Remove="plugins\demux\libty_plugin.dll" />
+    <None Remove="plugins\demux\libvc1_plugin.dll" />
+    <None Remove="plugins\demux\libvobsub_plugin.dll" />
+    <None Remove="plugins\demux\libvoc_plugin.dll" />
+    <None Remove="plugins\demux\libwav_plugin.dll" />
+    <None Remove="plugins\demux\libxa_plugin.dll" />
+    <None Remove="plugins\keystore\libfile_keystore_plugin.dll" />
+    <None Remove="plugins\keystore\libmemory_keystore_plugin.dll" />
+    <None Remove="plugins\logger\libconsole_logger_plugin.dll" />
+    <None Remove="plugins\lua\liblua_plugin.dll" />
+    <None Remove="plugins\meta_engine\libfolder_plugin.dll" />
+    <None Remove="plugins\meta_engine\libtaglib_plugin.dll" />
+    <None Remove="plugins\misc\libaddonsfsstorage_plugin.dll" />
+    <None Remove="plugins\misc\libaddonsvorepository_plugin.dll" />
+    <None Remove="plugins\misc\libfingerprinter_plugin.dll" />
+    <None Remove="plugins\misc\libgnutls_plugin.dll" />
+    <None Remove="plugins\misc\libxml_plugin.dll" />
+    <None Remove="plugins\mux\libmux_asf_plugin.dll" />
+    <None Remove="plugins\mux\libmux_avi_plugin.dll" />
+    <None Remove="plugins\mux\libmux_dummy_plugin.dll" />
+    <None Remove="plugins\mux\libmux_mp4_plugin.dll" />
+    <None Remove="plugins\mux\libmux_mpjpeg_plugin.dll" />
+    <None Remove="plugins\mux\libmux_ogg_plugin.dll" />
+    <None Remove="plugins\mux\libmux_ps_plugin.dll" />
+    <None Remove="plugins\mux\libmux_ts_plugin.dll" />
+    <None Remove="plugins\mux\libmux_wav_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_av1_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_copy_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_dirac_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_dts_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_flac_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_h264_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_hevc_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_mlp_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_mpeg4audio_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_mpeg4video_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_mpegaudio_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_mpegvideo_plugin.dll" />
+    <None Remove="plugins\packetizer\libpacketizer_vc1_plugin.dll" />
+    <None Remove="plugins\services_discovery\libmicrodns_plugin.dll" />
+    <None Remove="plugins\services_discovery\libupnp_plugin.dll" />
+    <None Remove="plugins\services_discovery\libwindrive_plugin.dll" />
+    <None Remove="plugins\spu\libaudiobargraph_v_plugin.dll" />
+    <None Remove="plugins\spu\liblogo_plugin.dll" />
+    <None Remove="plugins\spu\libmarq_plugin.dll" />
+    <None Remove="plugins\spu\libmosaic_plugin.dll" />
+    <None Remove="plugins\spu\libremoteosd_plugin.dll" />
+    <None Remove="plugins\spu\librss_plugin.dll" />
+    <None Remove="plugins\spu\libsubsdelay_plugin.dll" />
+    <None Remove="plugins\stream_extractor\libarchive_plugin.dll" />
+    <None Remove="plugins\stream_filter\libadf_plugin.dll" />
+    <None Remove="plugins\stream_filter\libaribcam_plugin.dll" />
+    <None Remove="plugins\stream_filter\libcache_block_plugin.dll" />
+    <None Remove="plugins\stream_filter\libcache_read_plugin.dll" />
+    <None Remove="plugins\stream_filter\libhds_plugin.dll" />
+    <None Remove="plugins\stream_filter\libinflate_plugin.dll" />
+    <None Remove="plugins\stream_filter\libprefetch_plugin.dll" />
+    <None Remove="plugins\stream_filter\librecord_plugin.dll" />
+    <None Remove="plugins\stream_filter\libskiptags_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_autodel_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_bridge_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_chromaprint_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_chromecast_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_delay_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_description_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_display_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_dummy_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_duplicate_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_es_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_gather_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_mosaic_bridge_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_record_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_setid_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_smem_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_standard_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_stats_plugin.dll" />
+    <None Remove="plugins\stream_out\libstream_out_transcode_plugin.dll" />
+    <None Remove="plugins\text_renderer\libfreetype_plugin.dll" />
+    <None Remove="plugins\text_renderer\libsapi_plugin.dll" />
+    <None Remove="plugins\text_renderer\libtdummy_plugin.dll" />
+    <None Remove="plugins\video_chroma\libchain_plugin.dll" />
+    <None Remove="plugins\video_chroma\libgrey_yuv_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_10_p010_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_nv12_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_rgb_mmx_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_rgb_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_rgb_sse2_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_yuy2_mmx_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_yuy2_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi420_yuy2_sse2_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi422_i420_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi422_yuy2_mmx_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi422_yuy2_plugin.dll" />
+    <None Remove="plugins\video_chroma\libi422_yuy2_sse2_plugin.dll" />
+    <None Remove="plugins\video_chroma\librv32_plugin.dll" />
+    <None Remove="plugins\video_chroma\libswscale_plugin.dll" />
+    <None Remove="plugins\video_chroma\libyuvp_plugin.dll" />
+    <None Remove="plugins\video_chroma\libyuy2_i420_plugin.dll" />
+    <None Remove="plugins\video_chroma\libyuy2_i422_plugin.dll" />
+    <None Remove="plugins\video_filter\libadjust_plugin.dll" />
+    <None Remove="plugins\video_filter\libalphamask_plugin.dll" />
+    <None Remove="plugins\video_filter\libanaglyph_plugin.dll" />
+    <None Remove="plugins\video_filter\libantiflicker_plugin.dll" />
+    <None Remove="plugins\video_filter\libball_plugin.dll" />
+    <None Remove="plugins\video_filter\libblendbench_plugin.dll" />
+    <None Remove="plugins\video_filter\libblend_plugin.dll" />
+    <None Remove="plugins\video_filter\libbluescreen_plugin.dll" />
+    <None Remove="plugins\video_filter\libcanvas_plugin.dll" />
+    <None Remove="plugins\video_filter\libcolorthres_plugin.dll" />
+    <None Remove="plugins\video_filter\libcroppadd_plugin.dll" />
+    <None Remove="plugins\video_filter\libdeinterlace_plugin.dll" />
+    <None Remove="plugins\video_filter\libedgedetection_plugin.dll" />
+    <None Remove="plugins\video_filter\liberase_plugin.dll" />
+    <None Remove="plugins\video_filter\libextract_plugin.dll" />
+    <None Remove="plugins\video_filter\libfps_plugin.dll" />
+    <None Remove="plugins\video_filter\libfreeze_plugin.dll" />
+    <None Remove="plugins\video_filter\libgaussianblur_plugin.dll" />
+    <None Remove="plugins\video_filter\libgradfun_plugin.dll" />
+    <None Remove="plugins\video_filter\libgradient_plugin.dll" />
+    <None Remove="plugins\video_filter\libgrain_plugin.dll" />
+    <None Remove="plugins\video_filter\libhqdn3d_plugin.dll" />
+    <None Remove="plugins\video_filter\libinvert_plugin.dll" />
+    <None Remove="plugins\video_filter\libmagnify_plugin.dll" />
+    <None Remove="plugins\video_filter\libmirror_plugin.dll" />
+    <None Remove="plugins\video_filter\libmotionblur_plugin.dll" />
+    <None Remove="plugins\video_filter\libmotiondetect_plugin.dll" />
+    <None Remove="plugins\video_filter\liboldmovie_plugin.dll" />
+    <None Remove="plugins\video_filter\libposterize_plugin.dll" />
+    <None Remove="plugins\video_filter\libpsychedelic_plugin.dll" />
+    <None Remove="plugins\video_filter\libpuzzle_plugin.dll" />
+    <None Remove="plugins\video_filter\libripple_plugin.dll" />
+    <None Remove="plugins\video_filter\libscale_plugin.dll" />
+    <None Remove="plugins\video_filter\libscene_plugin.dll" />
+    <None Remove="plugins\video_filter\libsepia_plugin.dll" />
+    <None Remove="plugins\video_filter\libsharpen_plugin.dll" />
+    <None Remove="plugins\video_filter\libtransform_plugin.dll" />
+    <None Remove="plugins\video_filter\libvhs_plugin.dll" />
+    <None Remove="plugins\video_filter\libwave_plugin.dll" />
+    <None Remove="plugins\video_output\libcaca_plugin.dll" />
+    <None Remove="plugins\video_output\libdirect3d11_plugin.dll" />
+    <None Remove="plugins\video_output\libdirect3d9_plugin.dll" />
+    <None Remove="plugins\video_output\libdirectdraw_plugin.dll" />
+    <None Remove="plugins\video_output\libdrawable_plugin.dll" />
+    <None Remove="plugins\video_output\libflaschen_plugin.dll" />
+    <None Remove="plugins\video_output\libglinterop_dxva2_plugin.dll" />
+    <None Remove="plugins\video_output\libglwin32_plugin.dll" />
+    <None Remove="plugins\video_output\libgl_plugin.dll" />
+    <None Remove="plugins\video_output\libvdummy_plugin.dll" />
+    <None Remove="plugins\video_output\libvmem_plugin.dll" />
+    <None Remove="plugins\video_output\libwgl_plugin.dll" />
+    <None Remove="plugins\video_output\libwingdi_plugin.dll" />
+    <None Remove="plugins\video_output\libwinhibit_plugin.dll" />
+    <None Remove="plugins\video_output\libyuv_plugin.dll" />
+    <None Remove="plugins\video_splitter\libclone_plugin.dll" />
+    <None Remove="plugins\video_splitter\libpanoramix_plugin.dll" />
+    <None Remove="plugins\video_splitter\libwall_plugin.dll" />
+    <None Remove="plugins\visualization\libglspectrum_plugin.dll" />
+    <None Remove="plugins\visualization\libgoom_plugin.dll" />
+    <None Remove="plugins\visualization\libprojectm_plugin.dll" />
+    <None Remove="plugins\visualization\libvisual_plugin.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="plugins\access\libaccess_concat_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libaccess_imem_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libaccess_mms_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libaccess_srt_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libaccess_wasapi_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libattachment_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libbluray-awt-j2se-1.3.2.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libbluray-j2se-1.3.2.jar">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libcdda_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libdcp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libdtv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libfilesystem_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libftp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libhttps_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libhttp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libidummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libimem_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\liblibbluray_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\liblive555_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libnfs_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\librist_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\librtp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libsatip_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libscreen_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libsdp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libsftp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libshm_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libsmb_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libtcp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libtimecode_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libudp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libvcd_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access\libvdr_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_dummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_file_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_http_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_livehttp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_rist_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_shout_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_srt_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\access_output\libaccess_output_udp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libaudiobargraph_a_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libaudio_format_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libchorus_flanger_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libcompressor_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libequalizer_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libgain_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libkaraoke_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libnormvol_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libparam_eq_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libremap_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libscaletempo_pitch_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libscaletempo_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libsimple_channel_mixer_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libspatialaudio_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libspatializer_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libspeex_resampler_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libstereo_widen_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libtospdif_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libtrivial_channel_mixer_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_filter\libugly_resampler_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_mixer\libfloat_mixer_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_mixer\libinteger_mixer_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_output\libadummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_output\libafile_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_output\libamem_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_output\libdirectsound_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_output\libmmdevice_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_output\libwasapi_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\audio_output\libwaveout_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libadpcm_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libaes3_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libaom_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libaraw_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libavcodec_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libcc_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libcdg_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libcrystalhd_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libcvdsub_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libd3d11va_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libdav1d_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libddummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libdmo_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libdvbsub_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libdxva2_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libedummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libflac_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libfluidsynth_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libg711_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libjpeg_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libkate_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\liblibass_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\liblpcm_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libmft_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libmpg123_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\liboggspots_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libopus_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libpng_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libqsv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\librawvideo_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\librtpvideo_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libschroedinger_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libscte18_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libscte27_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libsdl_image_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libspdif_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libspeex_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libspudec_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libstl_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libsubsdec_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libsubstx3g_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libsubsusf_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libsvcdsub_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libtextst_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libtheora_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libttml_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libtwolame_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libuleaddvaudio_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libvorbis_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libvpx_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libwebvtt_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libx26410b_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\codec\libzvbi_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\d3d9\libdirect3d9_filters_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libadaptive_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libaiff_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libasf_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libau_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libavi_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libcaf_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libdemuxdump_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libdemux_cdg_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libdemux_chromecast_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libdemux_stl_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libdiracsys_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libdirectory_demux_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libes_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libflacsys_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libgme_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libh26x_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libimage_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libmjpeg_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libmkv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libmod_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libmp4_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libmpgv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libnoseek_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libnsc_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libnsv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libnuv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libogg_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libplaylist_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libps_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libpva_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\librawaud_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\librawdv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\librawvid_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libsmf_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libsubtitle_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libts_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libtta_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libty_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libvc1_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libvobsub_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libvoc_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libwav_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\demux\libxa_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\keystore\libfile_keystore_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\keystore\libmemory_keystore_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\logger\libconsole_logger_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\lua\liblua_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\meta_engine\libfolder_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\meta_engine\libtaglib_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\misc\libaddonsfsstorage_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\misc\libaddonsvorepository_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\misc\libfingerprinter_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\misc\libgnutls_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\misc\libxml_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_asf_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_avi_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_dummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_mp4_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_mpjpeg_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_ogg_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_ps_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_ts_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\mux\libmux_wav_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_av1_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_copy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_dirac_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_dts_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_flac_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_h264_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_hevc_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_mlp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_mpeg4audio_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_mpeg4video_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_mpegaudio_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_mpegvideo_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\packetizer\libpacketizer_vc1_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\services_discovery\libmicrodns_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\services_discovery\libupnp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\services_discovery\libwindrive_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\spu\libaudiobargraph_v_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\spu\liblogo_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\spu\libmarq_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\spu\libmosaic_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\spu\libremoteosd_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\spu\librss_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\spu\libsubsdelay_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_extractor\libarchive_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libadf_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libaribcam_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libcache_block_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libcache_read_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libhds_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libinflate_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libprefetch_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\librecord_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_filter\libskiptags_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_autodel_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_bridge_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_chromaprint_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_chromecast_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_delay_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_description_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_display_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_dummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_duplicate_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_es_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_gather_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_mosaic_bridge_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_record_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_setid_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_smem_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_standard_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_stats_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\stream_out\libstream_out_transcode_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\text_renderer\libfreetype_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\text_renderer\libsapi_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\text_renderer\libtdummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libchain_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libgrey_yuv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_10_p010_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_nv12_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_rgb_mmx_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_rgb_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_rgb_sse2_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_yuy2_mmx_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_yuy2_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi420_yuy2_sse2_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi422_i420_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi422_yuy2_mmx_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi422_yuy2_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libi422_yuy2_sse2_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\librv32_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libswscale_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libyuvp_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libyuy2_i420_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_chroma\libyuy2_i422_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libadjust_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libalphamask_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libanaglyph_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libantiflicker_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libball_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libblendbench_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libblend_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libbluescreen_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libcanvas_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libcolorthres_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libcroppadd_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libdeinterlace_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libedgedetection_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\liberase_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libextract_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libfps_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libfreeze_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libgaussianblur_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libgradfun_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libgradient_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libgrain_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libhqdn3d_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libinvert_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libmagnify_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libmirror_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libmotionblur_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libmotiondetect_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\liboldmovie_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libposterize_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libpsychedelic_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libpuzzle_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libripple_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libscale_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libscene_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libsepia_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libsharpen_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libtransform_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libvhs_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_filter\libwave_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libcaca_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libdirect3d11_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libdirect3d9_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libdirectdraw_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libdrawable_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libflaschen_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libglinterop_dxva2_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libglwin32_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libgl_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libvdummy_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libvmem_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libwgl_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libwingdi_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libwinhibit_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_output\libyuv_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_splitter\libclone_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_splitter\libpanoramix_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\video_splitter\libwall_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\visualization\libglspectrum_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\visualization\libgoom_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\visualization\libprojectm_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\visualization\libvisual_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibVLCSharp.WinForms" Version="3.9.3" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.21" />
+  </ItemGroup>
+
+</Project>
